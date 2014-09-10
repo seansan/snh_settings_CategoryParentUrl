@@ -6,7 +6,7 @@
                 <seo translate="label">
                     <fields>
                         <category_use_parentcategory translate="label">
-                            <label>Use Parent Category Path for Category URLs</label>
+                            <label>Remove Parent Category Path for Category URLs</label>
                             <comment>If enabled removes all parent categories from path so: category /clothing/shoes becomes /shoes</comment>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>

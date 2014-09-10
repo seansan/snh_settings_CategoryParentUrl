@@ -25,7 +25,7 @@
     <default>
         <catalog>
             <seo>
-                <category_use_parentcategory>1</category_use_parentcategory>
+                <category_use_parentcategory>0</category_use_parentcategory>
             </seo>
         </catalog>
     </default>
