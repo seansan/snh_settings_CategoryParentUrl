@@ -27,20 +27,19 @@ class SNH_CategoryParentUrl_Model_Url extends Mage_Catalog_Model_Url
 
         $categoryUrlSuffix = $this->getCategoryUrlSuffix($category->getStoreId());
 
-		/** If extension setting enabled then skip this code  as described here
-		http://magento.stackexchange.com/questions/19471/magento-product-url-with-last-subcategory **/
-		
-		if (!$configValue) {
-			if (null === $parentPath) {
-				$parentPath = $this->getResource()->getCategoryParentPath($category);
-			}
-			elseif ($parentPath == '/') {
-				$parentPath = '';
-			}
-        }
+		if (null === $parentPath) {
+			$parentPath = $this->getResource()->getCategoryParentPath($category);
+		}
+		elseif ($parentPath == '/') {
+			$parentPath = '';
+		}
+        
+		$parentPath = Mage::helper('catalog/category')->getCategoryUrlPath($parentPath,true, $category->getStoreId());
 
-		$parentPath = Mage::helper('catalog/category')->getCategoryUrlPath($parentPath,
-                                                                           true, $category->getStoreId());
+		/** If extension setting enabled then reset parentPath to empty
+		http://magento.stackexchange.com/questions/19471/magento-product-url-with-last-subcategory **/
+
+		if ($configValue) { $parentPath = ''; }
 
         $requestPath = $parentPath . $urlKey . $categoryUrlSuffix;
         if (isset($existingRequestPath) && $existingRequestPath == $requestPath . $suffix) {
