@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SNH_CategoryParentUrl>
+            <version>0.1.0</version>
+        </SNH_CategoryParentUrl>
+    </modules>
+    <global>
+        <helpers>
+            <categoryparenturl>
+                <class>SNH_CategoryParentUrl_Helper</class>
+            </categoryparenturl>
+        </helpers>
+        <models>
+            <categoryparenturl>
+                <class>SNH_CategoryParentUrl_Model</class>
+            </categoryparenturl>
+            <catalog>
+                <rewrite>
+                    <url>SNH_CategoryParentUrl_Model_Url</url>
+                </rewrite>
+            </catalog>		
+        </models>
+    </global>
+    <default>
+        <catalog>
+            <seo>
+                <category_use_parentcategory>1</category_use_parentcategory>
+            </seo>
+        </catalog>
+    </default>
+</config>
