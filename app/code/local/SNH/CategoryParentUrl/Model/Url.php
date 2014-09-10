@@ -5,10 +5,9 @@ class SNH_CategoryParentUrl_Model_Url extends Mage_Catalog_Model_Url
     public function getCategoryRequestPath($category, $parentPath)
     {
         
-		/** check for store setting; if NO run parent code - safe for upgrades **/
+		/** check for store setting; if YES SHOW PARENT then run parent code - safe for upgrades **/
 		$configValue = (Mage::getStoreConfig('catalog/seo/category_use_parentcategory',Mage::app()->getStore());
-		print_r($configValue);
-		if (!$configValue) {die "Staat uit"; return parent::getCategoryRequestPath($category, $parentPath);}
+		if (!$configValue) {return parent::getCategoryRequestPath($category, $parentPath);}
 		
 		$storeId = $category->getStoreId();
         $idPath  = $this->generatePath('id', null, $category);
