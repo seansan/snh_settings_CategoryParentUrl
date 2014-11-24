@@ -8,7 +8,7 @@ If enabled removes all parent categories from path so: category /clothing/shoes 
 Install using 
 `cd /path/to/web/root
 modman init
-modman clone <this git_url>
+modman clone https://github.com/seansan/snh_settings_CategoryParentUrl.git
 `
 
 Changelog
