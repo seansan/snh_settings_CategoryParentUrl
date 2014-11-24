@@ -17,4 +17,5 @@ Make sure to reindex the `Catalog URL Rewrites` after changing the setting under
 Changelog
 =========
 1. Inital code and tested on Magento 1.8.1 (10-9-2014)
+2. Move to community (and tested and working on Magento 1.9.0.1 (24-11-2014)
 
