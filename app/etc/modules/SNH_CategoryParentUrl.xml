@@ -3,7 +3,7 @@
   <modules>
     <SNH_CategoryParentUrl>
       <active>true</active>
-      <codePool>local</codePool>
+      <codePool>community</codePool>
       <version>0.1.0</version>
     </SNH_CategoryParentUrl>
   </modules>

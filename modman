@@ -1,3 +1,3 @@
-# SNH Settings
-app/code/local/SNH/*                                      app/code/local/SNH/
-app/etc/modules/*                                         app/etc/modules/
+# SNH_CategoryParentUrl
+app/code/community/SNH/ app/code/community/SNH/
+app/etc/modules/* app/etc/modules/
