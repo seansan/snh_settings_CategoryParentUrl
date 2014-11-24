@@ -6,10 +6,11 @@ Simple small Magento extension
 If enabled removes all parent categories from path so: category /clothing/shoes becomes /shoes
 
 Install using 
-`cd /path/to/web/root
+```
+cd /path/to/web/root
 modman init
 modman clone https://github.com/seansan/snh_settings_CategoryParentUrl.git
-`
+```
 
 Changelog
 =========
