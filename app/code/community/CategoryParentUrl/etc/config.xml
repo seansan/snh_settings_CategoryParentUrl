@@ -22,6 +22,17 @@
             </catalog>		
         </models>
     </global>
+    <adminhtml>
+        <translate>
+            <modules>
+                <categoryparenturl>
+                    <files>
+                        <default>SNH_CategoryParentUrl.csv</default>
+                    </files>
+                </categoryparenturl>
+            </modules>
+        </translate>
+    </adminhtml>
     <default>
         <catalog>
             <seo>
