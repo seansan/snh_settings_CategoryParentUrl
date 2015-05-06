@@ -1,0 +1,3 @@
+"Remove Parent Category Path for Category URLs","Rimuovi percorso categoria dalle URL di categoria"
+"If enabled removes all parent categories from the URL path, so that /clothing/shoes becomes /shoes.","Se abilitata rimuove i genitori dal percorso categoria: /clothing/shoes diventa /shoes."
+
