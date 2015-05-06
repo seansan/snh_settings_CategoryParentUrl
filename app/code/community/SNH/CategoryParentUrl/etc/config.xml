@@ -19,6 +19,9 @@
                 <rewrite>
                     <url>SNH_CategoryParentUrl_Model_Url</url>
                 </rewrite>
+                <rewrite>
+                    <category>SNH_CategoryParentUrl_Model_Category</category>
+                </rewrite>
             </catalog>		
         </models>
     </global>
