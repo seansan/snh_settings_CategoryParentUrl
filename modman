@@ -1,6 +1,13 @@
 # SNH_CategoryParentUrl
+<<<<<<< HEAD
 app/code/local/SNH/CategoryParentUrl/*          app/code/local/SNH/CategoryParentUrl/
 app/etc/modules/*                               app/etc/modules/
 app/locale/de_DE/SNH_CategoryParentUrl.csv      app/locale/de_DE/SNH_CategoryParentUrl.csv
 app/locale/en_US/SNH_CategoryParentUrl.csv      app/locale/en_US/SNH_CategoryParentUrl.csv
+=======
+app/code/community/SNH/CategoryParentUrl/* app/code/community/SNH/CategoryParentUrl/
+app/etc/modules/SNH_CategoryParentUrl.xml app/etc/modules/SNH_CategoryParentUrl.xml
+app/locale/de_DE/SNH_CategoryParentUrl.csv app/locale/de_DE/SNH_CategoryParentUrl.csv
+app/locale/en_US/SNH_CategoryParentUrl.csv app/locale/en_US/SNH_CategoryParentUrl.csv
+>>>>>>> origin/master
 
