@@ -8,7 +8,7 @@ class SNH_CategoryParentUrl_Model_Url extends Mage_Catalog_Model_Url
 	$storeId = $category->getStoreId();        
 	
 	/** check for store setting; if YES SHOW PARENT then run parent code - safe for upgrades **/
-	$configValue = Mage::getStoreConfig('catalog/seo/category_use_parentcategory', $storeId);
+	$configValue = Mage::getStoreConfigFlag('catalog/seo/category_use_parentcategory', $storeId);
 	if (!$configValue) {return parent::getCategoryRequestPath($category, $parentPath);}
 		
 
